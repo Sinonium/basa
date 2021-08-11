@@ -215,6 +215,47 @@
         }
     }
 }
+@media screen and(max-width:578px) {
+    .header{
+        &__block{
+            padding-top: vw(10px);
+        }
+        &__navigation{
+            margin-left: 10px;
+            ul li{
+                @include font(vw(26px), 400, 17px, $light-grey);
+            }
+        }
+        &__date{
+            display: none;
+        }
+        &__temperature{
+            margin-top: -0.6vw;
+            margin-left: vmin(24px);
+        }
+        &__course{
+            margin-left: vmin(62px);
+            svg{
+                transform: scale(0.8);
+            }
+        }
+        &__socials{
+            margin-left: vmin(14px);
+            transform: scale(0.7);
+        }
+        &__logo{
+            margin-top: vw(-8px);
+            margin-left: 10px;
+        }
+        &__search{
+            margin: vmin(2px) 0 0 vw(320px);
+            input{
+                width: vmin(220px);
+                height: vw(50px);
+            }
+        }
+    }
+}
 @media screen and(max-width:426px) {
     .header{
         &__block{
@@ -240,7 +281,7 @@
             }
         }
         &__socials{
-            margin-left: vw(0px);
+            margin-left: vw(10px);
             margin-right: vw(-80px);
             transform: scale(0.6);
         }

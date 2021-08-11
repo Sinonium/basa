@@ -14,18 +14,7 @@
 }
 @media screen and(max-width:577px) {
     .title{
-        font-size: vw(42px);
-    }
-}
-
-@media screen and(max-width:426px) {
-    .title{
-        font-size: vw(38px);
-    }
-}
-@media screen and(max-width:376px) {
-    .title{
-        font-size: vw(46px);
+        font-size: vmin(11px);
     }
 }
 

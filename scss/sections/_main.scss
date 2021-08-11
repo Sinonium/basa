@@ -71,8 +71,8 @@
                 }
                 span{
                     margin-top: -4px;
-                    @include font(vw(44px), 500, 14px, $bg-white);
-                    height: 75px;
+                    @include font(vmin(10px), 500, vmin(12px), $bg-white);
+                    height: vmin(65px);
                     padding: vw(36px);
                 }
             }
@@ -91,7 +91,7 @@
                 span{
                     margin-top: -4px;
                     @include font(vw(52px), 500, 12px, $bg-white);
-                    height: 75px;
+                    height: vmin(70px);
                     padding: vw(36px);
                 }
             }

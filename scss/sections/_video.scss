@@ -103,41 +103,88 @@
 }
 @media screen and(max-width:578px){
     .video{
-        margin-bottom: 40px;
-    }
-}
-
-@media screen and(max-width:426px) {
-    .video{
         &__block{
-            display: flex;
             flex-wrap: wrap;
-            margin-bottom: vw(30px);
-            iframe{
-                margin: 0 5px;
-                width: 805px;
-                height: 365px;
-            }
             &-quiz{
-                max-width: vw(805px);
-                margin-left: vw(22px);
-                height: 210px;
+                max-width: vmin(270px);
+                height: 290px;
+                margin: vmin(10px) auto;
+                background-color: $bg-white;
                 h3{
-                    @include font(vw(36px), 700, 22px, $bg-white);
-                    padding: 12px 55px;
+                    @include font(vmin(10px), 700, 22px, $bg-white);
+                    align-items: center;
+                    text-align: center;
+                    text-transform: uppercase;
+                    padding: 20px vmin(40px);
+                    background-color: $purple;
                 }
                 p{
-                    @include font(vw(36px), 700, 14px, $black);
-                    margin: vw(30px) vw(30px)
+                    @include font(vmin(10px), 700, 22px, $black);
+                    margin: vmin(10px) vmin(16px);
                 }
                 ul li{
                     span{
+                        display: inline-block;
                         max-width: 205px;
-                        @include font(vw(32px), 500, 6px, $black);
-                        margin: 0 0 8px 10px;
+                        @include font(vmin(8px), 500, 22px, $black);
+                        margin: 0 0 vw(15px) 20px;
+                    }
+                    .progress-line{
+                        height: 10px;
+                        width: inherit;
+                        position: relative;
+                        background: $light-grey;
+                        border-radius: 10px;
+                        margin: 0px 20px 15px;
+                        padding: 2px;
+                        span{
+                            position: relative;
+                            width: 100%;
+                            left: -20px;
+                            display: block;
+                            height: 100%;
+                            background-color: $purple;
+                            display: block;
+                            border-radius: 10px;  
+                        }
                     }
                 }
             }
         }
-    }
+        }
 }
+
+// @media screen and(max-width:426px) {
+//     .video{
+//         &__block{
+//             display: flex;
+//             flex-wrap: wrap;
+//             margin-bottom: vw(30px);
+//             iframe{
+//                 margin: 0 5px;
+//                 width: 805px;
+//                 height: 365px;
+//             }
+//             &-quiz{
+//                 max-width: vw(805px);
+//                 margin-left: vw(22px);
+//                 height: 210px;
+//                 h3{
+//                     @include font(vw(36px), 700, 22px, $bg-white);
+//                     padding: 12px 55px;
+//                 }
+//                 p{
+//                     @include font(vw(36px), 700, 14px, $black);
+//                     margin: vw(30px) vw(30px)
+//                 }
+//                 ul li{
+//                     span{
+//                         max-width: 205px;
+//                         @include font(vw(32px), 500, 6px, $black);
+//                         margin: 0 0 8px 10px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
