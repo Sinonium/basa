@@ -21,7 +21,7 @@
 
 @media screen and (max-width: 577px) {
   .title {
-    font-size: 3.73333vmin;
+    font-size: 2.93333vmin;
   }
 }
 
@@ -302,6 +302,52 @@
   }
 }
 
+@media screen and (max-width: 578px) {
+  .header__block {
+    padding-top: 0.52083vw;
+  }
+  .header__navigation {
+    margin-left: 10px;
+  }
+  .header__navigation ul li {
+    font-family: 'Montserrat';
+    font-size: 1.35417vw;
+    font-weight: 400;
+    line-height: 17px;
+    color: #C4C4C4;
+  }
+  .header__date {
+    display: none;
+  }
+  .header__temperature {
+    margin-top: -0.6vw;
+    margin-left: 6.4vmin;
+  }
+  .header__course {
+    margin-left: 16.53333vmin;
+  }
+  .header__course svg {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .header__socials {
+    margin-left: 3.73333vmin;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .header__logo {
+    margin-top: -0.41667vw;
+    margin-left: 10px;
+  }
+  .header__search {
+    margin: 0.53333vmin 0 0 16.66667vw;
+  }
+  .header__search input {
+    width: 58.66667vmin;
+    height: 2.60417vw;
+  }
+}
+
 @media screen and (max-width: 426px) {
   .header__block {
     padding-top: 0.52083vw;
@@ -331,7 +377,7 @@
             transform: scale(0.7);
   }
   .header__socials {
-    margin-left: 0vw;
+    margin-left: 0.52083vw;
     margin-right: -4.16667vw;
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
@@ -888,85 +934,85 @@
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 578px) {
   .news__line span {
     font-family: 'Montserrat';
-    font-size: 1.25vw;
-    font-weight: 700;
-    line-height: 17px;
+    font-size: 1.33333vmin;
+    font-weight: 600;
+    line-height: 15px;
     color: #ffffff;
   }
   .news__line span:first-child {
-    padding: 6px 25px;
-    margin-right: 16px;
+    padding: 6px 12px;
+    margin-right: 0;
     font-family: 'Montserrat';
-    font-size: 1.25vw;
-    font-weight: 700;
+    font-size: 1.33333vmin;
+    font-weight: 600;
     line-height: 17px;
     color: #7559FF;
   }
   .news__line input {
-    margin-left: 3.64583vw;
+    margin-left: 2.13333vmin;
     height: 1.66667vw;
     font-family: 'Montserrat';
     font-size: 1.14583vw;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 17px;
     color: #000000;
   }
   .news__block-1 img {
-    max-width: 49.89583vw;
+    max-width: 45.33333vmin;
   }
   .news__block-1-text {
     bottom: 10%;
     font-family: 'Montserrat';
-    font-size: 1.5625vw;
+    font-size: 2.13333vmin;
     font-weight: 600;
-    line-height: 1.66667vw;
+    line-height: 2.4vmin;
     color: #ffffff;
   }
   .news__block-2 img {
-    max-width: 24.01042vw;
+    max-width: 22.13333vmin;
   }
   .news__block-2-text {
     bottom: 10%;
     font-family: 'Montserrat';
-    font-size: 1.14583vw;
+    font-size: 1.33333vmin;
     font-weight: 500;
-    line-height: 1.35417vw;
+    line-height: 1.33333vmin;
     color: #ffffff;
   }
   .news__block-3 img {
-    max-width: 24.01042vw;
+    max-width: 22.13333vmin;
   }
   .news__block-3-text {
     bottom: 10%;
     font-family: 'Montserrat';
-    font-size: 1.14583vw;
+    font-size: 1.33333vmin;
     font-weight: 500;
-    line-height: 1.35417vw;
+    line-height: 1.33333vmin;
     color: #ffffff;
   }
   .news__block-4 img {
-    max-width: 24.01042vw;
+    max-width: 22.13333vmin;
   }
   .news__block-4-text {
     bottom: 10%;
     font-family: 'Montserrat';
-    font-size: 1.14583vw;
+    font-size: 1.33333vmin;
     font-weight: 500;
-    line-height: 1.35417vw;
+    line-height: 1.33333vmin;
     color: #ffffff;
   }
   .news__block-5 img {
-    max-width: 24.01042vw;
+    max-width: 22.13333vmin;
   }
   .news__block-5-text {
     bottom: 10%;
     font-family: 'Montserrat';
-    font-size: 1.14583vw;
+    font-size: 1.33333vmin;
     font-weight: 500;
-    line-height: 1.35417vw;
+    line-height: 1.33333vmin;
     color: #ffffff;
   }
   .news__list {
@@ -976,173 +1022,17 @@
     padding: 10px 0 10px 15px;
   }
   .news__list-title::after {
-    width: 93.75vw;
+    width: 84vmin;
   }
   .news__list-content-item {
-    margin: 1.5625vw 1.14583vw 4.0625vw 2.86458vw;
-    width: 19.01042vw;
+    margin: 1.6vmin 0.26667vmin 5.33333vmin 2.66667vmin;
+    width: 18.66667vmin;
   }
   .news__list-content-item p {
     font-family: 'Montserrat';
-    font-size: 1.51042vw;
+    font-size: 1.6vmin;
     font-weight: 600;
     line-height: 11px;
-    color: #000000;
-  }
-}
-
-@media screen and (max-width: 404px) {
-  .news__line span {
-    font-family: 'Montserrat';
-    font-size: 1.35417vw;
-    font-weight: 700;
-    line-height: 10px;
-    color: #ffffff;
-  }
-  .news__line span:first-child {
-    padding: 7px 18px;
-    margin-right: 8px;
-    font-family: 'Montserrat';
-    font-size: 1.35417vw;
-    font-weight: 700;
-    line-height: 10px;
-    color: #7559FF;
-  }
-  .news__line input {
-    margin-left: 1.5625vw;
-    height: 1.66667vw;
-    font-family: 'Montserrat';
-    font-size: 1.14583vw;
-    font-weight: 500;
-    line-height: 17px;
-    color: #000000;
-  }
-}
-
-@media screen and (max-width: 376px) {
-  .news__line span {
-    font-family: 'Montserrat';
-    font-size: 1.35417vw;
-    font-weight: 700;
-    line-height: 10px;
-    color: #ffffff;
-  }
-  .news__line span:first-child {
-    padding: 7px 18px;
-    margin-right: 8px;
-    font-family: 'Montserrat';
-    font-size: 1.35417vw;
-    font-weight: 700;
-    line-height: 10px;
-    color: #7559FF;
-  }
-  .news__line input {
-    margin-left: 1.5625vw;
-    height: 1.66667vw;
-    font-family: 'Montserrat';
-    font-size: 1.14583vw;
-    font-weight: 500;
-    line-height: 17px;
-    color: #000000;
-  }
-  .news__block-1 img {
-    max-width: 49.89583vw;
-  }
-  .news__block-1-text {
-    bottom: 10%;
-    font-family: 'Montserrat';
-    font-size: 1.5625vw;
-    font-weight: 600;
-    line-height: 1.66667vw;
-    color: #ffffff;
-  }
-  .news__block-2 img {
-    max-width: 24.01042vw;
-  }
-  .news__block-2-text {
-    bottom: 10%;
-    font-family: 'Montserrat';
-    font-size: 1.14583vw;
-    font-weight: 500;
-    line-height: 1.35417vw;
-    color: #ffffff;
-  }
-  .news__block-3 img {
-    max-width: 24.01042vw;
-  }
-  .news__block-3-text {
-    bottom: 10%;
-    font-family: 'Montserrat';
-    font-size: 1.14583vw;
-    font-weight: 500;
-    line-height: 1.35417vw;
-    color: #ffffff;
-  }
-  .news__block-4 img {
-    max-width: 24.01042vw;
-  }
-  .news__block-4-text {
-    bottom: 10%;
-    font-family: 'Montserrat';
-    font-size: 1.14583vw;
-    font-weight: 500;
-    line-height: 1.35417vw;
-    color: #ffffff;
-  }
-  .news__block-5 img {
-    max-width: 24.01042vw;
-  }
-  .news__block-5-text {
-    bottom: 10%;
-    font-family: 'Montserrat';
-    font-size: 1.14583vw;
-    font-weight: 500;
-    line-height: 1.35417vw;
-    color: #ffffff;
-  }
-  .news__list {
-    height: 220px;
-  }
-  .news__list-title {
-    padding: 8px 0 8px 15px;
-  }
-  .news__list-content-item {
-    margin: 1.5625vw 0.9375vw 4.58333vw 2.86458vw;
-    width: 21.09375vw;
-  }
-  .news__list-content-item p {
-    font-family: 'Montserrat';
-    font-size: 1.66667vw;
-    font-weight: 600;
-    line-height: 11px;
-    color: #000000;
-  }
-}
-
-@media screen and (max-width: 321px) {
-  .news__line span {
-    font-family: 'Montserrat';
-    font-size: 1.45833vw;
-    font-weight: 700;
-    line-height: 10px;
-    color: #ffffff;
-  }
-  .news__line span:first-child {
-    padding: 7px 10px;
-    margin-right: 2px;
-    font-family: 'Montserrat';
-    font-size: 1.45833vw;
-    font-weight: 700;
-    line-height: 10px;
-    color: #7559FF;
-  }
-  .news__line input {
-    margin-left: 0.52083vw;
-    height: 1.66667vw;
-    font-family: 'Montserrat';
-    font-size: 1.14583vw;
-    font-weight: 500;
-    line-height: 17px;
     color: #000000;
   }
 }
@@ -1237,11 +1127,11 @@
   .main__content-item span {
     margin-top: -4px;
     font-family: 'Montserrat';
-    font-size: 2.29167vw;
+    font-size: 2.66667vmin;
     font-weight: 500;
-    line-height: 14px;
+    line-height: 3.2vmin;
     color: #ffffff;
-    height: 75px;
+    height: 17.33333vmin;
     padding: 1.875vw;
   }
 }
@@ -1261,7 +1151,7 @@
     font-weight: 500;
     line-height: 12px;
     color: #ffffff;
-    height: 75px;
+    height: 18.66667vmin;
     padding: 1.875vw;
   }
 }
@@ -1640,7 +1530,7 @@
             justify-content: center;
   }
   .catalog__block-item-title {
-    padding: 3.2vmin 0;
+    padding: 3.2vmin 0 1.33333vmin;
     margin-bottom: 1.04167vw;
   }
   .catalog__block-item img {

@@ -311,67 +311,67 @@
         }
     }
 }
-@media screen and(max-width:426px) {
+@media screen and(max-width:578px) {
     .news{
         &__line{
             span{
-                @include font(vw(24px), 700, 17px, $bg-white);
+                @include font(vmin(5px), 600, 15px, $bg-white);
             }
             span:first-child{
-                padding: 6px 25px;
-                margin-right: 16px;
-                @include font(vw(24px), 700, 17px, $purple);
+                padding: 6px 12px;
+                margin-right: 0;
+                @include font(vmin(5px), 600, 17px, $purple);
             }
             input{
-                margin-left: vw(70px);
+                margin-left: vmin(8px);
                 height: vw(32px);
-                @include font(vw(22px), 500, 17px);
+                @include font(vw(22px), 400, 17px);
                 }
         }
         &__block{
             &-1{
                 img{
-                    max-width: vw(958px);
+                    max-width: vmin(170px);
                 }
             &-text{
                 bottom: 10%;
-                @include font(vw(30px), 600, vw(32px), $bg-white);
+                @include font(vmin(8px), 600, vmin(9px), $bg-white);
             }
         }
         &-2{
             img{
-                max-width: vw(461px);
+                max-width: vmin(83px);
             }
             &-text{
                 bottom: 10%;
-                @include font(vw(22px), 500, vw(26px), $bg-white);
+                @include font(vmin(5px), 500, vmin(5px), $bg-white);
             }
         }
         &-3{
             img{
-                max-width: vw(461px);
+                max-width: vmin(83px);
             }
             &-text{
                 bottom: 10%;
-                @include font(vw(22px), 500, vw(26px), $bg-white);
+                @include font(vmin(5px), 500, vmin(5px), $bg-white);
             }
         }
         &-4{
             img{
-                max-width: vw(461px);
+                max-width: vmin(83px);
             }
             &-text{
                 bottom: 10%;
-                @include font(vw(22px), 500, vw(26px), $bg-white);
+                @include font(vmin(5px), 500, vmin(5px), $bg-white);
             }
         }
         &-5{
             img{
-                max-width: vw(461px);
+                max-width: vmin(83px);
             }
             &-text{
                 bottom: 10%;
-                @include font(vw(22px), 500, vw(26px), $bg-white);
+                @include font(vmin(5px), 500, vmin(5px), $bg-white);
             }
         }
             }
@@ -380,138 +380,18 @@
             &-title{
                 padding: 10px 0 10px 15px;
                 &::after{
-                    width: vw(1800px);
+                    width: vmin(315px);
                 }
             }
             &-content{
                 &-item{
-                    margin: vw(30px) vw(22px) vw(78px) vw(55px);
-                    width: vw(365px);
+                    margin: vmin(6px) vmin(1px) vmin(20px) vmin(10px);
+                    width: vmin(70px);
                     p{
-                         @include font(vw(29px), 600, 11px)
+                         @include font(vmin(6px), 600, 11px)
                     }
                 }
             }
         }
     }
-}
-@media screen and(max-width:404px){
-    .news{
-        &__line{
-            span{
-                @include font(vw(26px), 700, 10px, $bg-white);
-            }
-            span:first-child{
-                padding: 7px 18px;
-                margin-right: 8px;
-                @include font(vw(26px), 700, 10px, $purple);
-            }
-            input{
-                margin-left: vw(30px);
-                height: vw(32px);
-                @include font(vw(22px), 500, 17px);
-                }
-        }
-    }
-}
-@media screen and(max-width:376px) {
-    .news{
-        &__line{
-            span{
-                @include font(vw(26px), 700, 10px, $bg-white);
-            }
-            span:first-child{
-                padding: 7px 18px;
-                margin-right: 8px;
-                @include font(vw(26px), 700, 10px, $purple);
-            }
-            input{
-                margin-left: vw(30px);
-                height: vw(32px);
-                @include font(vw(22px), 500, 17px);
-                }
-        }
-        &__block{
-            &-1{
-                img{
-                    max-width: vw(958px);
-                }
-            &-text{
-                bottom: 10%;
-                @include font(vw(30px), 600, vw(32px), $bg-white);
-            }
-        }
-        &-2{
-            img{
-                max-width: vw(461px);
-            }
-            &-text{
-                bottom: 10%;
-                @include font(vw(22px), 500, vw(26px), $bg-white);
-            }
-        }
-        &-3{
-            img{
-                max-width: vw(461px);
-            }
-            &-text{
-                bottom: 10%;
-                @include font(vw(22px), 500, vw(26px), $bg-white);
-            }
-        }
-        &-4{
-            img{
-                max-width: vw(461px);
-            }
-            &-text{
-                bottom: 10%;
-                @include font(vw(22px), 500, vw(26px), $bg-white);
-            }
-        }
-        &-5{
-            img{
-                max-width: vw(461px);
-            }
-            &-text{
-                bottom: 10%;
-                @include font(vw(22px), 500, vw(26px), $bg-white);
-            }
-        }
-            }
-        &__list{
-            height: 220px;
-            &-title{
-                padding: 8px 0 8px 15px;
-            }
-            &-content{
-                &-item{
-                    margin: vw(30px) vw(18px) vw(88px) vw(55px);
-                    width: vw(405px);
-                    p{
-                         @include font(vw(32px), 600, 11px)
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and(max-width:321px){
-    .news{
-    &__line{
-        span{
-            @include font(vw(28px), 700, 10px, $bg-white);
-        }
-        span:first-child{
-            padding: 7px 10px;
-            margin-right: 2px;
-            @include font(vw(28px), 700, 10px, $purple);
-        }
-        input{
-            margin-left: vw(10px);
-            height: vw(32px);
-            @include font(vw(22px), 500, 17px);
-            }
-    }
-}
 }
