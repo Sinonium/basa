@@ -355,7 +355,7 @@
   }
 }
 
-@media screen and (max-width: 387px) {
+@media screen and (max-width: 404px) {
   .header__block {
     height: 9.89583vw;
   }
@@ -428,6 +428,17 @@
   .navigation__block ul li {
     font-size: 1.14583vw;
     margin: 11px 1.04167vw 0 10px;
+  }
+}
+
+@media screen and (max-width: 404px) {
+  .navigation__block ul {
+    height: 32px;
+  }
+  .navigation__block ul li {
+    font-size: 1.35417vw;
+    line-height: 8px;
+    margin: 12px -0.625vw 0 10px;
   }
 }
 
@@ -986,7 +997,7 @@
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 404px) {
   .news__line span {
     font-family: 'Montserrat';
     font-size: 1.35417vw;
