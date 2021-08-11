@@ -19,6 +19,12 @@
   }
 }
 
+@media screen and (max-width: 577px) {
+  .title {
+    font-size: 2.1875vw;
+  }
+}
+
 @media screen and (max-width: 426px) {
   .title {
     font-size: 1.97917vw;
@@ -1222,78 +1228,50 @@
   }
 }
 
-@media screen and (max-width: 426px) {
-  .main__title {
-    padding: 13px;
-  }
-  .main__content {
-    margin-bottom: 10px;
-  }
-  .main__content-item {
-    max-width: 94px;
-    margin-right: 18px;
-  }
-  .main__content-item img {
-    max-width: 21.77083vw;
-  }
-  .main__content-item span {
-    margin-top: -4px;
-    font-family: 'Montserrat';
-    font-size: 1.25vw;
-    font-weight: 500;
-    line-height: 11px;
-    color: #ffffff;
-    height: 75px;
-    padding: 1.45833vw;
-  }
-}
-
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 577px) {
   .main__content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .main__content-item {
-    max-width: 135px;
-    margin-right: 0px;
+    max-width: 305px;
     margin-bottom: 16px;
   }
   .main__content-item img {
-    max-width: 35.9375vw;
+    max-width: 72.39583vw;
   }
   .main__content-item span {
     margin-top: -4px;
     font-family: 'Montserrat';
-    font-size: 1.77083vw;
+    font-size: 2.29167vw;
     font-weight: 500;
-    line-height: 10px;
+    line-height: 14px;
     color: #ffffff;
     height: 75px;
     padding: 1.875vw;
   }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 426px) {
   .main__content-item {
-    max-width: 125px;
-    margin-right: 0px;
+    max-width: 72.39583vw;
     margin-bottom: 16px;
   }
   .main__content-item img {
-    max-width: 39.0625vw;
+    max-width: 72.39583vw;
   }
   .main__content-item span {
     margin-top: -4px;
     font-family: 'Montserrat';
-    font-size: 1.875vw;
+    font-size: 2.70833vw;
     font-weight: 500;
-    line-height: 10px;
+    line-height: 12px;
     color: #ffffff;
     height: 75px;
     padding: 1.875vw;
@@ -1340,6 +1318,27 @@
   }
   .about__block svg {
     padding: 3.38542vw 5px 0 1.5625vw;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .about__block {
+    height: 85px;
+    margin-bottom: 15px;
+  }
+  .about__block p {
+    font-family: 'Montserrat';
+    font-size: 1.5625vw;
+    font-weight: 700;
+    line-height: 29px;
+    color: #7559FF;
+    padding: 4.42708vw 12.5vw 2.34375vw 4.58333vw;
+    max-width: 65.625vw;
+  }
+  .about__block svg {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    padding: 5.46875vw 5px 0 1.5625vw;
   }
 }
 
@@ -1516,6 +1515,12 @@
   }
 }
 
+@media screen and (max-width: 578px) {
+  .video {
+    margin-bottom: 40px;
+  }
+}
+
 @media screen and (max-width: 426px) {
   .video__block {
     display: -webkit-box;
@@ -1628,40 +1633,29 @@
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 578px) {
   .catalog__block {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    margin-bottom: 4.94792vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 49.73958vw;
   }
   .catalog__block-item-title {
     padding: 1.14583vw;
     margin-bottom: 1.04167vw;
   }
   .catalog__block-item img {
-    max-height: 29.6875vw;
+    max-height: 60.9375vw;
   }
   .catalog__block-item p {
-    max-width: 28.28125vw;
+    max-width: 45.98958vw;
     font-family: 'Montserrat';
-    font-size: 1.66667vw;
+    font-size: 1.97917vw;
     font-weight: 700;
-    line-height: 12px;
+    line-height: 3.02083vw;
     color: #000000;
     padding: 1.04167vw;
-  }
-}
-
-.footer {
-  background-color: #000000;
-  height: 665px;
-  width: 100%;
-}
-
-@media screen and (max-width: 1109px) {
-  .footer {
-    height: 34.63542vw;
+    margin-bottom: 20px;
   }
 }
 

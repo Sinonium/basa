@@ -12,6 +12,12 @@
         font-size: vw(28px);
     }
 }
+@media screen and(max-width:577px) {
+    .title{
+        font-size: vw(42px);
+    }
+}
+
 @media screen and(max-width:426px) {
     .title{
         font-size: vw(38px);

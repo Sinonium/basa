@@ -57,46 +57,21 @@
         }
         }
 }
-
-@media screen and(max-width:426px) {
-    .main{
-        &__title{
-            padding: 13px;
-        }
-        &__content{
-            margin-bottom: 10px;
-            &-item{
-                max-width: 94px;
-                margin-right: 18px;
-                img{
-                    max-width: vw(418px);
-                }
-                span{
-                    margin-top: -4px;
-                    @include font(vw(24px), 500, 11px, $bg-white);
-                    height: 75px;
-                    padding: vw(28px);
-                }
-            }
-        }
-    }
-}
-@media screen and(max-width:376px){
+@media screen and(max-width:577px) {
     .main{
         &__content{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            justify-content: center;
             &-item{
-                max-width: 135px;
-                margin-right: 0px;
+                max-width: 305px;
                 margin-bottom: 16px;
                 img{
-                    max-width: vw(690px);
+                    max-width: vw(1390px);
                 }
                 span{
                     margin-top: -4px;
-                    @include font(vw(34px), 500, 10px, $bg-white);
+                    @include font(vw(44px), 500, 14px, $bg-white);
                     height: 75px;
                     padding: vw(36px);
                 }
@@ -104,19 +79,18 @@
         }
     }
 }
-@media screen and(max-width:321px) {
+@media screen and(max-width:426px) {
     .main{
         &__content{
             &-item{
-                max-width: 125px;
-                margin-right: 0px;
+                max-width: vw(1390px);
                 margin-bottom: 16px;
                 img{
-                    max-width: vw(750px);
+                    max-width: vw(1390px);
                 }
                 span{
                     margin-top: -4px;
-                    @include font(vw(36px), 500, 10px, $bg-white);
+                    @include font(vw(52px), 500, 12px, $bg-white);
                     height: 75px;
                     padding: vw(36px);
                 }
