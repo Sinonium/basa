@@ -60,19 +60,18 @@
     .catalog{
         &__block{
             justify-content: center;
-            margin-bottom: vw(955px);
             &-item{
                 &-title{
-                    padding: vw(22px);
+                    padding: vmin(12px) 0;
                     margin-bottom: vw(20px);
                 }
                 img{
                     max-height: vw(1170px);
                 }
                 p{
-                    max-width: vw(883px);
-                    @include font(vw(38px), 700, vw(58px));
-                    padding: vw(20px);
+                    max-width: vmin(260px);
+                    @include font(vmin(14px), 600, vmin(14px));
+                    padding: vw(20px) 0;
                     margin-bottom: 20px;
                 }
             }

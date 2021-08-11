@@ -21,19 +21,7 @@
 
 @media screen and (max-width: 577px) {
   .title {
-    font-size: 2.1875vw;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .title {
-    font-size: 1.97917vw;
-  }
-}
-
-@media screen and (max-width: 376px) {
-  .title {
-    font-size: 2.39583vw;
+    font-size: 3.73333vmin;
   }
 }
 
@@ -1516,54 +1504,66 @@
 }
 
 @media screen and (max-width: 578px) {
-  .video {
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (max-width: 426px) {
   .video__block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-bottom: 1.5625vw;
-  }
-  .video__block iframe {
-    margin: 0 5px;
-    width: 805px;
-    height: 365px;
   }
   .video__block-quiz {
-    max-width: 41.92708vw;
-    margin-left: 1.14583vw;
-    height: 210px;
+    max-width: 72vmin;
+    height: 290px;
+    margin: 2.66667vmin auto;
+    background-color: #ffffff;
   }
   .video__block-quiz h3 {
     font-family: 'Montserrat';
-    font-size: 1.875vw;
+    font-size: 2.66667vmin;
     font-weight: 700;
     line-height: 22px;
     color: #ffffff;
-    padding: 12px 55px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 10.66667vmin;
+    background-color: #7559FF;
   }
   .video__block-quiz p {
     font-family: 'Montserrat';
-    font-size: 1.875vw;
+    font-size: 2.66667vmin;
     font-weight: 700;
-    line-height: 14px;
+    line-height: 22px;
     color: #000000;
-    margin: 1.5625vw 1.5625vw;
+    margin: 2.66667vmin 4.26667vmin;
   }
   .video__block-quiz ul li span {
+    display: inline-block;
     max-width: 205px;
     font-family: 'Montserrat';
-    font-size: 1.66667vw;
+    font-size: 2.13333vmin;
     font-weight: 500;
-    line-height: 6px;
+    line-height: 22px;
     color: #000000;
-    margin: 0 0 8px 10px;
+    margin: 0 0 0.78125vw 20px;
+  }
+  .video__block-quiz ul li .progress-line {
+    height: 10px;
+    width: inherit;
+    position: relative;
+    background: #C4C4C4;
+    border-radius: 10px;
+    margin: 0px 20px 15px;
+    padding: 2px;
+  }
+  .video__block-quiz ul li .progress-line span {
+    position: relative;
+    width: 100%;
+    left: -20px;
+    display: block;
+    height: 100%;
+    background-color: #7559FF;
+    display: block;
+    border-radius: 10px;
   }
 }
 
@@ -1638,23 +1638,22 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 49.73958vw;
   }
   .catalog__block-item-title {
-    padding: 1.14583vw;
+    padding: 3.2vmin 0;
     margin-bottom: 1.04167vw;
   }
   .catalog__block-item img {
     max-height: 60.9375vw;
   }
   .catalog__block-item p {
-    max-width: 45.98958vw;
+    max-width: 69.33333vmin;
     font-family: 'Montserrat';
-    font-size: 1.97917vw;
-    font-weight: 700;
-    line-height: 3.02083vw;
+    font-size: 3.73333vmin;
+    font-weight: 600;
+    line-height: 3.73333vmin;
     color: #000000;
-    padding: 1.04167vw;
+    padding: 1.04167vw 0;
     margin-bottom: 20px;
   }
 }
