@@ -3,3 +3,9 @@
     height: 665px;
     width: 100%;
 }
+
+@media screen and(max-width:1109px) {
+    .footer{
+        height: vw(665px);
+    }
+}

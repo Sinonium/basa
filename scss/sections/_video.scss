@@ -1,26 +1,26 @@
 .video{
     &__block{
         display: flex;
-        margin-bottom: 40px;
+        margin-bottom: vw(40px);
         iframe{
-            width:955px;
+            width: 955px;
             height: 465px;
         }
         &-quiz{
-            max-width: 305px;
+            max-width: vw(305px);
             height: 465px;
-            margin-left: 22px;
+            margin-left: vw(22px);
             background-color: $bg-white;
             h3{
                 @include font(vw(18px), 700, 22px, $bg-white);
                 align-items: center;
                 text-transform: uppercase;
-                padding: 20px 76px;
+                padding: 20px vw(76px);
                 background-color: $purple;
             }
             p{
                 @include font(vw(17px), 700, 22px, $black);
-                margin: 40px 20px
+                margin: 40px vw(20px)
             }
             ul li{
                 span{
@@ -46,6 +46,90 @@
                         background-color: $purple;
                         display: block;
                         border-radius: 10px;  
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:1109px) {
+    .video{
+        &__block{
+            margin-bottom: vw(30px);
+            iframe{
+                width: 955px;
+                height: 465px;
+            }
+            &-quiz{
+                max-width: vw(305px);
+                margin-left: vw(22px);
+                h3{
+                    @include font(vw(20px), 700, 22px, $bg-white);
+                }
+                p{
+                    @include font(vw(20px), 700, 22px, $black);
+                    margin: vw(40px) vw(10px)
+                }
+                ul li{
+                    span{
+                        max-width: 205px;
+                        @include font(vw(20px), 500, 22px, $black);
+                        margin: 0 0 10px 10px;
+                    }
+                    .progress-line{
+                        height: 10px;
+                        width: inherit;
+                        position: relative;
+                        background: $light-grey;
+                        border-radius: 10px;
+                        margin: 0px 10px 10px;
+                        padding: 2px;
+                        span{
+                            position: relative;
+                            width: 100%;
+                            left: -10px;
+                            display: block;
+                            height: 100%;
+                            background-color: $purple;
+                            display: block;
+                            border-radius: 10px;  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:426px) {
+    .video{
+        &__block{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: vw(30px);
+            iframe{
+                margin: 0 5px;
+                width: 805px;
+                height: 365px;
+            }
+            &-quiz{
+                max-width: vw(805px);
+                margin-left: vw(22px);
+                height: 210px;
+                h3{
+                    @include font(vw(36px), 700, 22px, $bg-white);
+                    padding: 12px 55px;
+                }
+                p{
+                    @include font(vw(36px), 700, 14px, $black);
+                    margin: vw(30px) vw(30px)
+                }
+                ul li{
+                    span{
+                        max-width: 205px;
+                        @include font(vw(32px), 500, 6px, $black);
+                        margin: 0 0 8px 10px;
                     }
                 }
             }

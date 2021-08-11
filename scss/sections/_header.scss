@@ -47,9 +47,12 @@
         white-space: nowrap;
         max-width: 100px;
         @include font(vw(14px), 800, 17px, #fff);
+        sup{
+            font-size: vw(12px);
+        }
     }
     &__socials{
-        margin-left: 125px;
+        margin-left: vw(155px);
         display: flex;
         align-items: center;
         max-width: 200px;
@@ -79,8 +82,199 @@
         height: vw(85px);
         background-color: $bg-main;
         border: none;
-        @include font(vw(40px), 500, 20px, $light-black);
+        @include font(vw(30px), 500, 20px, $light-black);
         }
     }
 }
-
+@media screen and(max-width:1817px) {
+    .header__date{
+        margin-right: vw(80px);
+    }
+    .header__temperature{
+        margin-left: vw(120px);
+    }
+}
+@media screen and(max-width:1655px) {
+    .header__date{
+        margin-right: vw(60px);
+        max-width: vw(185px);
+    }
+}
+@media screen and(max-width:1557px) {
+    .header__search{
+        input{
+            height: vw(75px);
+        }
+    }
+    .header__date{
+        margin-right: vw(50px);
+    }
+    .header__temperature{
+        margin-left: vw(110px);
+    }
+}
+@media screen and(max-width:1473px){
+    .header__date{
+        margin-right: vw(40px);
+    }
+}
+@media screen and(max-width:1441px) {
+    .header__logo{
+        margin-top: vw(17px);
+    }
+    .header__search{
+        margin: vw(17px) 0 0 vw(100px);
+    }
+    .header__socials{
+        margin-left: vw(145px);
+    }
+}
+@media screen and(max-width:1381px) {
+    .header__date{
+        margin-left: vw(98px);
+    }
+    .header__search{
+        margin: vw(17px) 0 0 vw(100px)
+    }
+    .header__socials{
+        margin-left: vw(130px);
+    }
+}
+@media screen and(max-width:1313px) {
+    .header__block{
+        padding-top: vw(23px);
+    }
+    .header__date{
+        margin-right: vw(30px);
+    }
+    .header__temperature{
+        margin-left: vw(100px);
+    }
+}
+@media screen and(max-width:1235px) {
+    .header__socials{
+        margin-left: vw(95px);
+    }
+    .header__course{
+        display: flex;
+    }
+}
+@media screen and(max-width:1109px) {
+    .header__date{
+        margin-left: vw(119px);
+        margin-right: vw(120px);
+    }
+    .header__temperature{
+        margin-left: vw(149px);
+    }
+    .header__search{
+        margin-left: vw(120px);
+        input{
+            width: vw(1370px);
+        }
+    }
+    .header__socials{
+        margin-left: vw(185px);
+    }
+}
+@media screen and(max-width: 865px){
+    .header{
+        &__block{
+            padding-top: vw(18px);
+        }
+        &__navigation{
+            ul li{
+                @include font(vw(22px), 400, 17px, $light-grey);
+            }
+        }
+        &__date{
+            max-width: vw(310px);
+            font-size: vw(22px);
+            margin-left: vw(180px);
+            margin-right: vw(20px);
+        }
+        &__course{
+            font-size: vw(22px);
+        }
+        &__temperature{
+            margin-left: vw(40px);
+            font-size: vw(22px);
+        }
+        &__socials{
+            margin-left: vw(165px);
+        }
+        &__search{
+            margin: vw(14px) 0 0 vw(180px);
+            input{
+                width: vw(1310px);
+                height: vw(68px);
+            }
+        }
+        &__logo{
+            margin-top: vw(12px);
+        }
+    }
+}
+@media screen and(max-width:426px) {
+    .header{
+        &__block{
+            padding-top: vw(10px);
+        }
+        &__navigation{
+            margin-left: 10px;
+            ul li{
+                @include font(vw(26px), 400, 17px, $light-grey);
+            }
+        }
+        &__date{
+            display: none;
+        }
+        &__temperature{
+            margin-top: -0.6vw;
+            margin-left: vw(80px);
+        }
+        &__course{
+            margin-left: vw(320px);
+            svg{
+                transform: scale(0.7);
+            }
+        }
+        &__socials{
+            margin-left: vw(0px);
+            margin-right: vw(-80px);
+            transform: scale(0.6);
+        }
+        &__logo{
+            margin-top: vw(-8px);
+            margin-left: 10px;
+        }
+        &__search{
+            margin: vw(-18px) 0 0 vw(320px);
+            input{
+                width: vw(1200px);
+                height: vw(50px);
+            }
+        }
+    }
+}
+@media screen and(max-width:376px) {
+    .header{
+        &__block{
+            height: vw(200px);
+        }
+    }
+}
+@media screen and(max-width:321px) {
+    .header{
+        &__socials{
+            margin-left: vw(-50px);
+            transform: scale(0.5);
+        }
+        &__search{
+            margin-top: vw(-30px);
+        }
+        &__temperature{
+            margin-top: -0.2vw;
+        }
+    }
+}

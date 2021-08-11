@@ -2,3 +2,24 @@
     @include font(vw(18px), 700, 22px, $purple);
     text-transform: uppercase;
 }
+@media screen and(max-width:1109px) {
+    .title{
+        font-size: vw(23px);
+    }
+}
+@media screen and(max-width:865px) {
+    .title{
+        font-size: vw(28px);
+    }
+}
+@media screen and(max-width:426px) {
+    .title{
+        font-size: vw(38px);
+    }
+}
+@media screen and(max-width:376px) {
+    .title{
+        font-size: vw(46px);
+    }
+}
+

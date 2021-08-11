@@ -24,22 +24,18 @@
         display: grid;
         margin-bottom: 2px;
         grid-template-areas:
-        "A A A A   B B B B   C C C C"
-        "A A A A   B B B B   C C C C"
-        "A A A A   D D D D   E E E E"
-        "A A A A   D D D D   E E E E";
+        "A A  B C "
+        "A A  D E";
     &-1{
         position: relative;
         grid-area: A;
-        max-width: 640px;
-        max-height: 474px;
         margin-right: 2px;
         img{
             max-width: vw(640px);
         }
         &-text{
             position: absolute;
-            max-width: 541px;
+            max-width: vw(541px);
             left: 5%;
             bottom: 5%;
             @include font(vw(24px), 700, vw(29px), $bg-white);
@@ -50,17 +46,14 @@
     }
     &-2{
         position: relative;
-        margin-bottom: 2px;
-        margin-right: 2px;
+        margin-right: vw(2px);
         grid-area: B;
-        max-width: 318px;
-        max-height: 236px;
         img{
-            max-width: vw(318px);
+            max-width: vw(317px);
         }
         &-text{
             position: absolute;
-            max-width: 275px;
+            max-width: vw(275px);
             left: 5%;
             bottom: 5%;
             @include font(vw(16px), 600, vw(20px), $bg-white);
@@ -69,14 +62,12 @@
     &-3{
         position: relative;
         grid-area: C;
-        max-width: 318px;
-        max-height: 236px;
         img{
-            max-width: vw(318px);
+            max-width: vw(317px);
         }
         &-text{
             position: absolute;
-            max-width: 259px;
+            max-width: vw(259px);
             left: 5%;
             bottom: 5%;
             @include font(vw(16px), 600, vw(20px), $bg-white);
@@ -85,14 +76,12 @@
     &-4{
         position: relative;
         grid-area: D;
-        max-width: 318px;
-        max-height: 236px;
         img{
-            max-width: vw(318px);
+            max-width: vw(317px);
         }
         &-text{
             position: absolute;
-            max-width: 258px;
+            max-width: vw(258px);
             left: 5%;
             bottom: 5%;
             @include font(vw(16px), 600, vw(20px), $bg-white);
@@ -101,19 +90,17 @@
     &-5{
         position: relative;
         grid-area: E;
-        max-width: 318px;
-        max-height: 236px;
         img{
-            max-width: vw(318px);
+            max-width: vw(317px);
         }
         &-text{
             position: absolute;
-            max-width: 231px;
+            max-width: vw(231px);
             left: 5%;
             bottom: 5%;
             @include font(vw(16px), 600, vw(20px), $bg-white);
         }
-        }
+      }
     }
     &__list{
         background-color: $bg-white;
@@ -134,7 +121,7 @@
             display: flex;
             flex-wrap: wrap;
             &-item{
-                margin: 17px 15px 40px 20px;
+                margin: vw(17px) vw(15px) vw(40px) vw(20px);
                 width: vw(285px);
                 height: 51px;
                 p{
@@ -143,5 +130,369 @@
             }
         }
     }
+}
+@media screen and(max-width:1411px) {
+    .news{
+        &__line{
+            input{
+                margin-left: vw(240px);
+            }
+        }
+    }
+}
+@media screen and(max-width:1171px) {
+    .news{
+        &__line{
+            input{
+                margin-left: vw(225px);
+            }
+        }
+    }
+}
 
+@media screen and(max-width:1109px){
+    .news{
+        &__line{
+        span{
+            display: inline-block;
+            @include font(vw(17px), 800, 17px, $bg-white);
+        }
+        span:first-child{
+            @include font(vw(17px), 800, 17px, $purple);
+        }
+        input{
+            margin-left: vw(440px);
+            @include font(vw(14px), 500, 17px);
+            align-items: center;
+            width: vw(220px);
+            text-transform: lowercase;
+            }
+        }
+        &__block{
+        &-1{
+            img{
+            max-width: vw(866px);
+        }
+        &-text{
+            max-width: vw(746px);
+            @include font(vw(26px), 700, vw(29px), $bg-white);
+        }
+    }
+    &-2{
+        margin-right: vw(5px);
+        img{
+            max-width: vw(427px);
+        }
+        &-text{
+            max-width: vw(355px);
+            @include font(vw(17px), 600, vw(20px), $bg-white);
+        }
+    }
+    &-3{
+        img{
+            max-width: vw(427px);
+        }
+        &-text{
+            max-width: vw(330px);
+            @include font(vw(17px), 600, vw(20px), $bg-white);
+        }
+    }
+    &-4{
+        img{
+            max-width: vw(427px);
+        }
+        &-text{
+            max-width: vw(318px);
+            @include font(vw(17px), 600, vw(20px), $bg-white);
+        }
+    }
+    &-5{
+        img{
+            max-width: vw(427px);
+        }
+        &-text{
+            max-width: vw(301px);
+            @include font(vw(17px), 600, vw(20px), $bg-white);
+        }
+    }
+        }
+        &__list{
+            &-title{
+                padding: 22px 0 17px 20px;
+                &::after{
+                    width: vw(1660px);
+                }
+            }
+            &-content{
+                &-item{
+                    margin: vw(25px) vw(25px) vw(45px) vw(35px);
+                    width: vw(355px);
+                    p{
+                        @include font(vw(17px), 600, 17px)
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:1103px){
+    .news{
+    &__line{
+        span{
+            @include font(vw(18px), 800, 17px, $bg-white);
+        }
+        span:first-child{
+            @include font(vw(18px), 800, 17px, $purple);
+        }
+        input{
+            margin-left: vw(360px);
+            @include font(vw(14px), 500, 17px);
+            }
+        }
+    }
+}
+@media screen and(max-width: 865px) {
+    .news{
+        &__line{
+            span{
+                @include font(vw(22px), 700, 17px, $bg-white);
+            }
+            span:first-child{
+                @include font(vw(22px), 700, 17px, $purple);
+            }
+            input{
+                margin-left: vw(100px);
+                @include font(vw(22px), 500, 17px);
+                }
+        }
+        &__block{
+            &-1{
+            &-text{
+                @include font(vw(30px), 700, vw(29px), $bg-white);
+            }
+        }
+        &-2{
+            &-text{
+                @include font(vw(22px), 600, vw(20px), $bg-white);
+            }
+        }
+        &-3{
+            &-text{
+                @include font(vw(22px), 600, vw(20px), $bg-white);
+            }
+        }
+        &-4{
+            &-text{
+                @include font(vw(22px), 600, vw(20px), $bg-white);
+            }
+        }
+        &-5{
+            &-text{
+                @include font(vw(22px), 600, vw(20px), $bg-white);
+            }
+        }
+            }
+        &__list{
+            &-title{
+                padding: 20px 0 15px 20px;
+                &::after{
+                    width: vw(1650px);
+                }
+            }
+            &-content{
+                &-item{
+                    margin: vw(30px) vw(25px) vw(48px) vw(40px);
+                    width: vw(365px);
+                    p{
+                         @include font(vw(22px), 600, 17px)
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:426px) {
+    .news{
+        &__line{
+            span{
+                @include font(vw(24px), 700, 17px, $bg-white);
+            }
+            span:first-child{
+                padding: 6px 25px;
+                margin-right: 16px;
+                @include font(vw(24px), 700, 17px, $purple);
+            }
+            input{
+                margin-left: vw(70px);
+                height: vw(32px);
+                @include font(vw(22px), 500, 17px);
+                }
+        }
+        &__block{
+            &-1{
+                img{
+                    max-width: vw(958px);
+                }
+            &-text{
+                bottom: 10%;
+                @include font(vw(30px), 600, vw(32px), $bg-white);
+            }
+        }
+        &-2{
+            img{
+                max-width: vw(461px);
+            }
+            &-text{
+                bottom: 10%;
+                @include font(vw(22px), 500, vw(26px), $bg-white);
+            }
+        }
+        &-3{
+            img{
+                max-width: vw(461px);
+            }
+            &-text{
+                bottom: 10%;
+                @include font(vw(22px), 500, vw(26px), $bg-white);
+            }
+        }
+        &-4{
+            img{
+                max-width: vw(461px);
+            }
+            &-text{
+                bottom: 10%;
+                @include font(vw(22px), 500, vw(26px), $bg-white);
+            }
+        }
+        &-5{
+            img{
+                max-width: vw(461px);
+            }
+            &-text{
+                bottom: 10%;
+                @include font(vw(22px), 500, vw(26px), $bg-white);
+            }
+        }
+            }
+        &__list{
+            height: 220px;
+            &-title{
+                padding: 10px 0 10px 15px;
+                &::after{
+                    width: vw(1800px);
+                }
+            }
+            &-content{
+                &-item{
+                    margin: vw(30px) vw(22px) vw(78px) vw(55px);
+                    width: vw(365px);
+                    p{
+                         @include font(vw(29px), 600, 11px)
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:376px) {
+    .news{
+        &__line{
+            span{
+                @include font(vw(26px), 700, 10px, $bg-white);
+            }
+            span:first-child{
+                padding: 7px 18px;
+                margin-right: 8px;
+                @include font(vw(26px), 700, 10px, $purple);
+            }
+            input{
+                margin-left: vw(30px);
+                height: vw(32px);
+                @include font(vw(22px), 500, 17px);
+                }
+        }
+        &__block{
+            &-1{
+                img{
+                    max-width: vw(958px);
+                }
+            &-text{
+                bottom: 10%;
+                @include font(vw(30px), 600, vw(32px), $bg-white);
+            }
+        }
+        &-2{
+            img{
+                max-width: vw(461px);
+            }
+            &-text{
+                bottom: 10%;
+                @include font(vw(22px), 500, vw(26px), $bg-white);
+            }
+        }
+        &-3{
+            img{
+                max-width: vw(461px);
+            }
+            &-text{
+                bottom: 10%;
+                @include font(vw(22px), 500, vw(26px), $bg-white);
+            }
+        }
+        &-4{
+            img{
+                max-width: vw(461px);
+            }
+            &-text{
+                bottom: 10%;
+                @include font(vw(22px), 500, vw(26px), $bg-white);
+            }
+        }
+        &-5{
+            img{
+                max-width: vw(461px);
+            }
+            &-text{
+                bottom: 10%;
+                @include font(vw(22px), 500, vw(26px), $bg-white);
+            }
+        }
+            }
+        &__list{
+            height: 220px;
+            &-title{
+                padding: 8px 0 8px 15px;
+            }
+            &-content{
+                &-item{
+                    margin: vw(30px) vw(18px) vw(88px) vw(55px);
+                    width: vw(405px);
+                    p{
+                         @include font(vw(32px), 600, 11px)
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:321px){
+    .news{
+    &__line{
+        span{
+            @include font(vw(28px), 700, 10px, $bg-white);
+        }
+        span:first-child{
+            padding: 7px 10px;
+            margin-right: 2px;
+            @include font(vw(28px), 700, 10px, $purple);
+        }
+        input{
+            margin-left: vw(10px);
+            height: vw(32px);
+            @include font(vw(22px), 500, 17px);
+            }
+    }
+}
 }

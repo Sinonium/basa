@@ -3,25 +3,79 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-bottom: 85px;
+        margin-bottom: vw(85px);
         &-item{
             &-title{
-                margin-bottom: 20px;
+                margin-bottom: vw(20px);
             }
             img{
-                max-height: 280px;
+                max-height: vw(280px);
                 max-width: 413px;
             }
             p{
-                max-width: 373px;
+                max-width: vw(373px);
                 @include font(vw(16px), 700, 20px);
                 text-transform: uppercase;
-                padding: 20px;
+                padding: vw(20px)
             }
         }
     }
 }
-footer{
-    background-color: black;
-    height: 600px;
+@media screen and (max-width:1109px) {
+    .catalog{
+        &__block{
+            margin-bottom: vw(95px);
+            &-item{
+                &-title{
+                    padding: vw(20px);
+                    margin-bottom: vw(20px);
+                }
+                img{
+                    max-height: vw(370px);
+                }
+                p{
+                    max-width: vw(473px);
+                    @include font(vw(20px), 700, 20px);
+                    padding: vw(20px)
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 865px){
+    .catalog{
+        &__block{
+            &-item{
+                p{
+                    max-width: vw(523px);
+                    @include font(vw(23px), 700, 20px);
+                    padding: vw(18px)
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 426px) {
+    .catalog{
+        &__block{
+            justify-content: space-evenly;
+            margin-bottom: vw(95px);
+            &-item{
+                &-title{
+                    padding: vw(22px);
+                    margin-bottom: vw(20px);
+                }
+                img{
+                    max-height: vw(570px);
+                }
+                p{
+                    max-width: vw(543px);
+                    @include font(vw(32px), 700, 12px);
+                    padding: vw(20px)
+                }
+            }
+        }
+    }
 }

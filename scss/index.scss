@@ -39,3 +39,14 @@ h1,h2,h3,h4,p{
     max-width: vw(1280px);
     margin: 0 auto;
 }
+
+@media screen and(max-width:1109px) {
+    .container{
+        max-width: 90%;
+    }
+}
+@media screen and(max-width:426px) {
+    .container{
+        max-width: 100%;
+    }
+}

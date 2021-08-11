@@ -7,11 +7,63 @@
             li{
                 @include font(vw(14px), 800, 17px);
                 text-transform: uppercase;
-                margin: 21px 51px 0 0;
+                margin: 21px vw(51px) 0 0;
                 cursor: pointer;
             }
             li:last-child{
                 margin-right: 0;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:1109px){
+    .navigation{
+        &__block{
+            ul{
+                li{
+                    font-size: vw(17px);
+                    margin: 21px vw(80px) 0 0;;
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width: 865px){
+    .navigation{
+        &__block{
+            ul{
+                li{
+                    font-size: vw(22px);
+                    margin: 21px vw(50px) 0 0;;
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:426px){
+    .navigation{
+        &__block{
+            ul{
+                height: 40px;
+                li{
+                    font-size: vw(22px);
+                    margin: 11px vw(20px) 0 10px;
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:376px) {
+    .navigation{
+        &__block{
+            ul{
+                height: 32px;
+                li{
+                    font-size: vw(26px);
+                    line-height: 8px;
+                    margin: 12px vw(-12px) 0 10px;
+                }
             }
         }
     }
