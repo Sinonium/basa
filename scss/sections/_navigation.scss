@@ -1,0 +1,18 @@
+.navigation{
+    &__block{
+        background-color: $bg-white;
+        ul{
+            display: flex;
+            height: 60px;
+            li{
+                @include font(vw(14px), 800, 17px);
+                text-transform: uppercase;
+                margin: 21px 51px 0 0;
+                cursor: pointer;
+            }
+            li:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.about{
+    &__block{
+        display: flex;
+        height: 120px;
+        background-color: $light-black;
+        margin-bottom: 20px;
+        p{
+            @include font(vw(24px), 700, 29px, $purple);
+            padding: 46px 150px 45px 88px;
+            max-width: 920px;
+            text-transform: uppercase;
+        }
+        svg{
+            padding: 46px 5px 0 30px;
+        }
+    }
+}

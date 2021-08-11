@@ -1,0 +1,41 @@
+@import './helpers/_variables.scss';
+@import './helpers/_mixin.scss';
+@import './helpers/_function.scss';
+@import './helpers/title';
+
+@import './sections/header';
+@import './sections/navigation';
+@import './sections/news';
+@import './sections/main';
+@import './sections/about';
+@import './sections/video';
+@import './sections/catalog';
+@import './sections/footer';
+
+
+
+
+body{
+    margin: 0;
+    background-color: $bg-main;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,p{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: vw(1280px);
+    margin: 0 auto;
+}

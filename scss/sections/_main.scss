@@ -1,0 +1,23 @@
+.main{
+    &__title{
+        padding: 20px;
+    }
+    &__content{
+        display: flex;
+        margin-bottom: 20px;
+        &-item{
+            max-width: 305px;
+            margin: 0 20px 0 0;
+            span{
+                margin-top: -4px;
+                @include font(vw(13px), 600, 17px, $bg-white);
+                text-transform: uppercase;
+                display: inline-block;
+                height: 108px;
+                box-sizing: border-box;
+                padding: 20px;
+                background-color: $purple;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.video{
+    &__block{
+        display: flex;
+        margin-bottom: 40px;
+        iframe{
+            width:955px;
+            height: 465px;
+        }
+        &-quiz{
+            max-width: 305px;
+            height: 465px;
+            margin-left: 22px;
+            background-color: $bg-white;
+            h3{
+                @include font(vw(18px), 700, 22px, $bg-white);
+                align-items: center;
+                text-transform: uppercase;
+                padding: 20px 76px;
+                background-color: $purple;
+            }
+            p{
+                @include font(vw(17px), 700, 22px, $black);
+                margin: 40px 20px
+            }
+            ul li{
+                span{
+                    display: inline-block;
+                    max-width: 205px;
+                    @include font(vw(17px), 500, 22px, $black);
+                    margin: 0 0 15px 20px;
+                }
+                .progress-line{
+                    height: 10px;
+                    width: inherit;
+                    position: relative;
+                    background: $light-grey;
+                    border-radius: 10px;
+                    margin: 0px 20px 15px;
+                    padding: 2px;
+                    span{
+                        position: relative;
+                        width: 100%;
+                        left: -20px;
+                        display: block;
+                        height: 100%;
+                        background-color: $purple;
+                        display: block;
+                        border-radius: 10px;  
+                    }
+                }
+            }
+        }
+    }
+}

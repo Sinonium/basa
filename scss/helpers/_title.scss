@@ -1,0 +1,4 @@
+.title{
+    @include font(vw(18px), 700, 22px, $purple);
+    text-transform: uppercase;
+}
