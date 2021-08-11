@@ -257,6 +257,13 @@
         }
     }
 }
+@media screen and(max-width:387px) {
+    .header{
+        &__block{
+            height: vw(190px);
+        }
+    }
+}
 @media screen and(max-width:376px) {
     .header{
         &__block{
