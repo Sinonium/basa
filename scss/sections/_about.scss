@@ -32,6 +32,24 @@
         }
     }
 }
+
+@media screen and(max-width:578px) {
+    .about{
+        &__block{
+            height: 85px;
+            margin-bottom: 15px;
+            p{
+                @include font(vw(30px), 700, 29px, $purple);
+                padding: vw(85px) vw(240px) vw(45px) vw(88px);
+                max-width: vw(1260px);
+            }
+            svg{
+                transform: scale(0.7);
+                padding: vw(105px) 5px 0 vw(30px);
+            }
+        }
+    }
+}
 @media screen and(max-width:426px){
     .about{
         &__block{
